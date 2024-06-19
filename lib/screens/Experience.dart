@@ -35,7 +35,7 @@ class ExperienceScreen extends StatelessWidget {
                 TableCell(
                   child: Container(
                     padding: EdgeInsets.all(8.0),
-                    child: Image.asset('../assets/images/ameli.png'),
+                    child: Image.asset('./assets/images/ameli.png'),
                   ),
                 ),
                 TableCell(
@@ -57,7 +57,7 @@ class ExperienceScreen extends StatelessWidget {
                 TableCell(
                   child: Container(
                     padding: EdgeInsets.all(8.0),
-                    child: Image.asset('../assets/images/passy.png'),
+                    child: Image.asset('./assets/images/passy.png'),
                   ),
                 ),
                 TableCell(
