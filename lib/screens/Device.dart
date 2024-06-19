@@ -6,7 +6,10 @@ import 'Infos.dart';
 import 'Experience.dart';
 
 class DeviceScreen extends StatefulWidget {
+  const DeviceScreen({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _DeviceScreenState createState() => _DeviceScreenState();
 }
 
@@ -14,11 +17,11 @@ class _DeviceScreenState extends State<DeviceScreen> {
   int _currentScreen = 0;
 
   final List<Widget> _screenList = [
-    ProfilScreen(),
-    CompetencesScreen(),
-    ExperienceScreen(),
-    FormationScreen(),
-    InfoScreen(),
+    const ProfilScreen(),
+    const CompetencesScreen(),
+    const ExperienceScreen(),
+    const FormationScreen(),
+    const InfoScreen(),
   ];
 
   @override
@@ -32,7 +35,7 @@ class _DeviceScreenState extends State<DeviceScreen> {
         iconSize: 35,
         currentIndex: _currentScreen,
         onTap: onTabTapped,
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.account_box_outlined),
             label: "Profil",
